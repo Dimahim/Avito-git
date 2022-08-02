@@ -37,8 +37,21 @@ body {
     font-size: 17px;
     line-height: 24px;
     font-family: pnsb;
-    color: #333
+    color: #333;
+    
 }
+.item-price_line-through {
+    text-decoration: line-through;
+}
+.container-fluid__avito {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.col-12__h3 {
+    font-size: 1.30rem;
+}
+
 button {
     outline: 0;
     cursor: pointer
@@ -123,7 +136,7 @@ header nav.stickytop {
     z-index: 300
 }
 main .first-block {
-    background: url(../images/first-block-bg.jpg) no-repeat center center;
+    background: url(../images/firts.png) no-repeat center center;
     -webkit-background-size: cover;
     background-size: cover;
     padding: 65px 0
@@ -289,15 +302,16 @@ main .characteristics {
 }
 main .characteristics h2 {
     font-size: 36px;
-    color: #003955;
+    color: black;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 40px
 }
 main .characteristics .grid {
     display: grid;
-    grid-template-columns: repeat(3, 350px);
-    grid-gap: 50px 50px
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 50px 50px;
+    justify-items: start;
 }
 main .characteristics .grid .item {
     display: -webkit-box;
@@ -337,7 +351,7 @@ main .characteristics .grid .item .img-block {
     margin-top: 3px
 }
 main .characteristics .grid .item .desc {
-    width: 250px
+    width: auto;
 }
 main .characteristics .grid .item .desc h3 {
     font-size: 23px;
@@ -360,15 +374,21 @@ main .kinds h2 {
     text-align: center;
     margin-bottom: 30px
 }
+main .kinds p {
+    font-size: 1.30rem;
+    text-align: center;
+    color: black;
+}
 main .kinds .grid {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    justify-content: center;
     -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
+    -webkit-justify-content: center;
     -ms-flex-pack: justify;
-    justify-content: space-between;
+    justify-content: center;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
@@ -470,7 +490,7 @@ main .texnology h3 {
     text-align: center
 }
 main .zamer {
-    background: url(../images/bg2.jpg) no-repeat center center;
+    background: url(../images/zamer.png) no-repeat center center;
     -webkit-background-size: cover;
     background-size: cover;
     padding: 44px 0 32px
@@ -1065,12 +1085,12 @@ footer a img {
         line-height: 40px
     }
     main .characteristics .grid {
-        grid-template-columns: repeat(2, 320px);
+        grid-template-columns: repeat(2, 1fr);
         -webkit-box-pack: justify;
         -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
         justify-content: space-between;
-        grid-gap: 50px 10px
+        grid-gap: 0 10px
     }
     main .characteristics .grid .item .desc h3 {
         font-size: 21px
@@ -1126,7 +1146,7 @@ footer a img {
         font-size: 14px
     }
 }
-@media (max-width: 767px) {
+@media (max-width: 769px) {
     header .header .logo-block span {
         font-size: 17px
     }
@@ -1259,7 +1279,7 @@ footer a img {
         text-align: center;
         margin-top: 15px;
         margin-left: auto;
-        margin-right: auto
+        margin-right: auto;
     }
     header .header {
         padding-left: 0;
@@ -1300,7 +1320,7 @@ footer a img {
         line-height: 24px
     }
     main .first-block .h1-block h2 {
-        margin-bottom: 0
+        margin-bottom: 11px
     }
     main .first-block .calculate {
         max-width: 369px;
@@ -1349,7 +1369,7 @@ footer a img {
         width: 100%
     }
     main .characteristics h2 {
-        font-size: 32px
+        font-size: 25px
     }
     main .characteristics .grid .item .desc {
         width: 188px
@@ -1364,10 +1384,12 @@ footer a img {
     main .kinds {
         padding-top: 70px
     }
+   
     main .kinds h2 {
-        font-size: 32px
+        font-size: 25px
     }
-    main .kinds .grid .item .wrap {
+    
+     main .kinds .grid .item .wrap {
         padding: 18px 20px 22px
     }
     main .kinds .grid .item .img {
@@ -1387,7 +1409,7 @@ footer a img {
         padding-top: 70px
     }
     main .texnology h2 {
-        font-size: 32px
+        font-size: 25px
     }
     main .texnology {
         padding-top: 70px;
@@ -1415,7 +1437,7 @@ footer a img {
         font-size: 16px
     }
     main .potolki-for h2 {
-        font-size: 32px
+        font-size: 24px
     }
     main .potolki-for .grid {
         grid-template-columns: 1fr
@@ -1434,7 +1456,7 @@ footer a img {
         padding-top: 70px
     }
     main .reviews h2 {
-        font-size: 32px
+        font-size: 25px
     }
     main .reviews .items .item {
         padding: 0 15px 50px
@@ -1509,7 +1531,8 @@ footer a img {
 .modal .modal-content {
     background: #fff;
     border: none;
-    padding: 45px 32px 43px
+    padding: 45px 32px 43px;
+    
 }
 @media (max-width: 361px) {
     .modal .modal-content {
@@ -1615,4 +1638,13 @@ footer a img {
 }
 .modal .close:hover {
     opacity: .85
+}
+
+@media screen and (max-width: 400px)  {
+    main .zamer {
+        background: url(../images/zamer2.jpg) no-repeat center center;
+        -webkit-background-size: cover;
+        background-size: cover;
+        
+    }
 }

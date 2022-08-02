@@ -1,4 +1,15 @@
 $(function() {
+	const menuBurger = document.querySelector('.d-md-flex');
+	const linkMenuBurger = document.querySelectorAll('.link__menu');
+
+	function closeMenuBurger() {
+		menuBurger.classList.toggle('show');
+	};
+
+	linkMenuBurger.forEach(function(item) {
+		item.addEventListener('click', closeMenuBurger)
+	});
+
 	$('#square').keyup(function(){
 		var square = $(this).val();
 		$('#price').val(square*1100)
@@ -18,29 +29,29 @@ $(function() {
 		thisH4.toggleClass('active');
 		thisSpan.fadeToggle().toggleClass('active');
 	});
-    ymaps.ready(init);
-    var myMap, 
-        myPlacemark;
+    // ymaps.ready(init);
+    // var myMap, 
+    //     myPlacemark;
 
-    function init(){ 
-		if( ($(window).width() <= 767)  ) {
-	        myMap = new ymaps.Map("map", {
-		            center: [55.75399400, 37.62209300],
-		            zoom: 8
-		        }); 
-		} else {
-	        myMap = new ymaps.Map("map", {
-	            center: [55.75399400, 37.62209300],
-	            zoom: 8
-	        }); 			
-		}
+    // function init(){ 
+		// if( ($(window).width() <= 767)  ) {
+	  //       myMap = new ymaps.Map("map", {
+		//             center: [55.75399400, 37.62209300],
+		//             zoom: 8
+		//         }); 
+		// } else {
+	  //       myMap = new ymaps.Map("map", {
+	  //           center: [55.75399400, 37.62209300],
+	  //           zoom: 8
+	  //       }); 			
+		// }
 
-        myPlacemark = new ymaps.Placemark([55.75399400, 37.62209300], {
-            hintContent: 'Алматы',
-            balloonContent: 'г. Алматы, пр. Достык, д. 291/3'
-        });
-        myMap.geoObjects.add(myPlacemark);
-    }
+    //     myPlacemark = new ymaps.Placemark([55.75399400, 37.62209300], {
+    //         hintContent: 'Алматы',
+    //         balloonContent: 'г. Алматы, пр. Достык, д. 291/3'
+    //     });
+    //     myMap.geoObjects.add(myPlacemark);
+    // }
     $('.up').click(function(e){
     	e.preventDefault();
     	$('html,body').animate({
@@ -110,4 +121,5 @@ $(function() {
 		}); 
 	});
 	new WOW().init();
+
 });
