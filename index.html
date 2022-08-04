@@ -25,9 +25,14 @@
 		      	</div>
 	      	<div class="modal-body">
 	      		<form action="" method="post">
-	      			<input type="hidden" class="type" value="call" name="type">
-							<input class="name" name="name" type="text" required placeholder="Ваше имя">
-							<input class="tel" name="tel" type="text" required placeholder="Ваш телефон">
+							<!-- Hidden Required Fields -->
+							<input type="hidden" name="project_name" value="Avito-git">
+							<input type="hidden" name="admin_email" value="alhimovd877@yandex.ru">
+							<input type="hidden" name="form_subject" value="Header form">
+							<!-- END Hidden Required Fields -->
+	      			<!-- <input type="hidden" class="type" value="call" name="type"> -->
+							<input type="text" class="name" name="name" required placeholder="Ваше имя">
+							<input type="text" class="tel" name="tel" required placeholder="Ваш телефон">
 							<button>Заказать</button>	      			
 	      		</form>
 	      	</div>
@@ -110,18 +115,6 @@
 							<p>Получи за 1 месяц востребованную профессию Авитолога.<br>И начни получать от 100т.р./м работая от 2 часов в день.</p>
 							<span class="d-flex justify-content-center align-items-center">Скидка 20%!</span>
 						</div>
-						<!-- <div class="calculate">
-							<div class="calculate-head"><h2>Оставить заявку</h2></div>
-							<hr>
-							<div class="calculate-body">
-								<form action="" method="post">
-									<input type="hidden" class="type" value="zamer" name="type">
-									<input class="name" name="name" type="text" required placeholder="Ваше имя">
-									<input class="tel" name="tel" type="text" required placeholder="Ваш телефон">
-									<button>ОСТАВИТЬ ЗАЯВКУ</button>	      			
-								</form>
-							</div>
-						</div> -->
 					</div>
 				</div>
 			</div>
@@ -146,55 +139,6 @@
 								<!-- <span>Опытная бригада монтажников и современное оборудование</span> -->
 							</div>
 						</div>
-						<!-- <div class="item item3 wow fadeInRight" data-wow-duration="2s">
-							<div class="img-block"><img src="images/item3.png" alt="icon"></div>
-							<div class="desc">
-								<h3>Богатый ассортимент</h3>
-								<span>Более 3000 цветов, любые виды, любые фактуры</span>
-							</div>
-						</div>
-						<div class="item item4 wow fadeInLeft" data-wow-duration="2s">
-							<div class="img-block"><img src="images/item4.png" alt="icon"></div>
-							<div class="desc">
-								<h3>Лучшие материалы</h3>
-								<span>Используем только  качественные экологичные плёнки БЕЗ запаха</span>
-							</div>
-						</div>
-						<div class="item item5 wow fadeInUp" data-wow-duration="2s">
-							<div class="img-block"><img src="images/item5.png" alt="icon"></div>
-							<div class="desc">
-								<h3>Гарантия 100 лет!</h3>
-								<span>Наши потолки НЕ провисают НЕ выцветают и НЕ портятся</span>
-							</div>
-						</div>
-						<div class="item item6 wow fadeInRight" data-wow-duration="2s">
-							<div class="img-block"><img src="images/item6.png" alt="icon"></div>
-							<div class="desc">
-								<h3>Заключение договора</h3>
-								<span>Работаем официально, есть все необходимые сертификаты</span>
-							</div>
-						</div>
-						<div class="item item7 wow fadeInLeft" data-wow-duration="2s">
-							<div class="img-block"><img src="images/item7.png" alt="icon"></div>
-							<div class="desc">
-								<h3>Бесплатный замер</h3>
-								<span>Выезжаем в течении 1 часа или в др. удобное вам время</span>
-							</div>
-						</div>
-						<div class="item item8 wow fadeInUp" data-wow-duration="2s">
-							<div class="img-block"><img src="images/item8.png" alt="icon"></div>
-							<div class="desc">
-								<h3>Ценим ваше время</h3>
-								<span>Изготовление потолка 1-2 дня, установка за пару часов</span>
-							</div>
-						</div>
-						<div class="item item9 wow fadeInRight" data-wow-duration="2s">
-							<div class="img-block"><img src="images/item9.png" alt="icon"></div>
-							<div class="desc">
-								<h3>Аккуратный монтаж</h3>
-								<span>После установки выполняем уборку помещения</span>
-							</div>
-						</div> -->
 					</div>
 				</div>
 			</div>
@@ -213,44 +157,7 @@
 							<h3 class="col-12__h3">В среднем Авитолог с одной компании зарабатывает от 20т.р/м и способен вести до 20 компаний.</h3>
 							<h3 class="col-12__h3">Этим специалистом можешь стать ты!</h3>
 						</div>	
-						<!-- <div class="grid">
-							<div class="item item1 wow fadeInLeft" data-wow-duration="2s">
-								<img class="img" src="images/kids-item1.jpg" alt="img">
-								<div class="wrap">
-									<h3>Глянцевые потолки</h3>
-									<span class="item-price">от 1100 Тг</span>
-									<div>
-										<span><img src="images/chech1.png" alt="img">Бесплатный cервис</span>
-										<span><img src="images/chech1.png" alt="img">С установкой</span>
-									</div>
-									<button data-toggle="modal" data-target="#zamer">Оставить заявку</button>								
-								</div>
-							</div>
-							<div class="item item2 wow fadeInUp" data-wow-duration="2s">
-								<img class="img" src="images/kids-item2.jpg" alt="img">
-								<div class="wrap">
-									<h3>Матовые потолки</h3>
-									<span class="item-price">от 1100 Тг</span>
-									<div>
-										<span><img src="images/chech1.png" alt="img">Бесплатный cервис</span>
-										<span><img src="images/chech1.png" alt="img">С установкой</span>
-									</div>
-									<button data-toggle="modal" data-target="#zamer">Оставить заявку</button>								
-								</div>
-							</div>
-							<div class="item item3 wow fadeInRight" data-wow-duration="2s">
-								<img class="img" src="images/kids-item3.jpg" alt="img">
-								<div class="wrap">
-									<h3>Сатиновые потолки</h3>
-									<span class="item-price">от 1100 Тг</span>
-									<div>
-										<span><img src="images/chech1.png" alt="img">Бесплатный cервис</span>
-										<span><img src="images/chech1.png" alt="img">С установкой</span>
-									</div>
-									<button data-toggle="modal" data-target="#zamer">Оставить заявку</button>						
-								</div>
-							</div>
-						</div> -->
+						
 					</div>
 				</div>
 			</div>			
@@ -318,115 +225,16 @@
 					<div class="col-12">
 						<p class="shop wow fadeInDown" data-wow-duration="2s">Рынок Авитологов стремительно развивается, 
 							поэтому не упусти возможность занять свое место и стать лучшим а значит востребованным специалистом в этой области!</p>
-						<!-- <div clacc="container-fluid__avito">
-							<h3>250 тысяч компаний на Авито продают новые товары и услуги.</h3>
-							<br>
-							<h3>Каждой из них требуется специалист Авитолог, который поможет настроить эффективную рекламную компанию.</h3>
-							<br>
-							<h3>В среднем Авитолог с одной компании зарабатывает от 20т.р/м и способен вести до 20 компаний.</h3>
-							<h3>Этим специалистом можешь стать ты!</h3>
-						</div>	 -->
-						<!-- <div class="grid">
-							<div class="item item1 wow fadeInLeft" data-wow-duration="2s">
-								<img class="img" src="images/kids-item1.jpg" alt="img">
-								<div class="wrap">
-									<h3>Глянцевые потолки</h3>
-									<span class="item-price">от 1100 Тг</span>
-									<div>
-										<span><img src="images/chech1.png" alt="img">Бесплатный cервис</span>
-										<span><img src="images/chech1.png" alt="img">С установкой</span>
-									</div>
-									<button data-toggle="modal" data-target="#zamer">Оставить заявку</button>								
-								</div>
-							</div>
-							<div class="item item2 wow fadeInUp" data-wow-duration="2s">
-								<img class="img" src="images/kids-item2.jpg" alt="img">
-								<div class="wrap">
-									<h3>Матовые потолки</h3>
-									<span class="item-price">от 1100 Тг</span>
-									<div>
-										<span><img src="images/chech1.png" alt="img">Бесплатный cервис</span>
-										<span><img src="images/chech1.png" alt="img">С установкой</span>
-									</div>
-									<button data-toggle="modal" data-target="#zamer">Оставить заявку</button>								
-								</div>
-							</div>
-							<div class="item item3 wow fadeInRight" data-wow-duration="2s">
-								<img class="img" src="images/kids-item3.jpg" alt="img">
-								<div class="wrap">
-									<h3>Сатиновые потолки</h3>
-									<span class="item-price">от 1100 Тг</span>
-									<div>
-										<span><img src="images/chech1.png" alt="img">Бесплатный cервис</span>
-										<span><img src="images/chech1.png" alt="img">С установкой</span>
-									</div>
-									<button data-toggle="modal" data-target="#zamer">Оставить заявку</button>						
-								</div>
-							</div>
-						</div> -->
 					</div>
 				</div>
 			</div>			
 		</div>
-
-
-		<!-- <div class="potolki-for container">
-			<div class="row">
-				<div class="col-12">
-					<h2 class="wow fadeInUp" data-wow-duration="2s">Рынок Авитологов стремительно развивается,<br> 
-						поэтому не упусти возможность занять свое место<br> и стать лучшим а значит востребованным специалистом  в этой области
-						</h2>
-				</div>
-			</div> -->
-			<!-- <div class="row">
-				<div class="col-12 grid">
-					<div class="item wow fadeInLeft" data-wow-duration="2s">
-						<img src="images/for-item1.jpg" alt="img">
-						<span>Спальни</span>
-					</div>
-					<div class="item wow fadeInUp" data-wow-duration="2s">
-						<img src="images/for-item2.jpg" alt="img">
-						<span>Гостинной</span>
-					</div>
-					<div class="item wow fadeInRight" data-wow-duration="2s">
-						<img src="images/for-item3.jpg" alt="img">
-						<span>Детской</span>
-					</div>
-					<div class="item wow fadeInLeft" data-wow-duration="2s">
-						<img src="images/for-item4.jpg" alt="img">
-						<span>Кухни</span>
-					</div>
-					<div class="item wow fadeInUp" data-wow-duration="2s">
-						<img src="images/for-item5.jpg" alt="img">
-						<span>Ванной и туалета</span>
-					</div>
-					<div class="item wow fadeInRight" data-wow-duration="2s">
-						<img src="images/for-item6.jpg" alt="img">
-						<span>Офиса</span>
-					</div>
-				</div>
-			</div> -->
-		<!-- </div> -->
 
 		<div class="container">
 			<div class="row">
 				<div class="program characteristics col-12">
 					<h2 class="wow fadeInDown" data-wow-duration="2s">Длительность курса 1 месяц<br>Четыре спринта<br>Длительность спринта 1 неделя</h2>
 					<div class="grid">
-						<!-- <div class="item item1 wow fadeInLeft" data-wow-duration="2s">
-							<div class="img-block"><img src="images/item1.png" alt="icon"></div>
-							<div class="desc">
-								<h3>Выгодная цена</h3>
-								<span>Лучшее соотношение цены и качества в Росии!</span>
-							</div>
-						</div>
-						<div class="item item2 wow fadeInUp" data-wow-duration="2s">
-							<div class="img-block"><img src="images/item2.png" alt="icon"></div>
-							<div class="desc">
-								<h3>Профессионализм</h3>
-								<span>Опытная бригада монтажников и современное оборудование</span>
-							</div>
-						</div> -->
 						<div class="item item3 wow fadeInLeft" data-wow-duration="2s">
 							<div class="img-block"><img src="images/item3.png" alt="icon"></div>
 							<div class="desc">
@@ -455,32 +263,10 @@
 								<span>На каждом спринт</span>
 							</div>
 						</div>
-						<!-- <div class="item item7 wow fadeInLeft" data-wow-duration="2s">
-							<div class="img-block"><img src="images/item7.png" alt="icon"></div>
-							<div class="desc">
-								<h3>Бесплатный замер</h3>
-								<span>Выезжаем в течении 1 часа или в др. удобное вам время</span>
-							</div>
-						</div>
-						<div class="item item8 wow fadeInUp" data-wow-duration="2s">
-							<div class="img-block"><img src="images/item8.png" alt="icon"></div>
-							<div class="desc">
-								<h3>Ценим ваше время</h3>
-								<span>Изготовление потолка 1-2 дня, установка за пару часов</span>
-							</div>
-						</div>
-						<div class="item item9 wow fadeInRight" data-wow-duration="2s">
-							<div class="img-block"><img src="images/item9.png" alt="icon"></div>
-							<div class="desc">
-								<h3>Аккуратный монтаж</h3>
-								<span>После установки выполняем уборку помещения</span>
-							</div>
-						</div> -->
 					</div>
 				</div>
 			</div>
 		</div>
-
 
 		<div class="ask container-fluid">
 			<div class="container">
@@ -529,14 +315,6 @@
 				<div class="row">
 					<div class="col-12">
 						<h2 class="wow fadeInDown" data-wow-duration="2s">Стоимость обучения</h2>
-						<!-- <div clacc="container-fluid__avito">
-							<h3>250 тысяч компаний на Авито продают новые товары и услуги.</h3>
-							<br>
-							<h3>Каждой из них требуется специалист Авитолог, который поможет настроить эффективную рекламную компанию.</h3>
-							<br>
-							<h3>В среднем Авитолог с одной компании зарабатывает от 20т.р/м и способен вести до 20 компаний.</h3>
-							<h3>Этим специалистом можешь стать ты!</h3>
-						</div>	 -->
 						<div class="grid">
 							<div class="item item1 wow fadeInLeft" data-wow-duration="2s">
 								<img class="img" src="images/20.jpg" alt="img">
@@ -547,39 +325,12 @@
 									<button data-toggle="modal" data-target="#zamer">Оставить заявку</button>								
 								</div>
 							</div>
-							<!-- <div class="item item2 wow fadeInUp" data-wow-duration="2s">
-								<img class="img" src="images/kids-item2.jpg" alt="img">
-								<div class="wrap">
-									<h3>Матовые потолки</h3>
-									<span class="item-price">от 1100 Тг</span>
-									<div>
-										<span><img src="images/chech1.png" alt="img">Бесплатный cервис</span>
-										<span><img src="images/chech1.png" alt="img">С установкой</span>
-									</div>
-									<button data-toggle="modal" data-target="#zamer">Оставить заявку</button>								
-								</div>
-							</div>
-							<div class="item item3 wow fadeInRight" data-wow-duration="2s">
-								<img class="img" src="images/kids-item3.jpg" alt="img">
-								<div class="wrap">
-									<h3>Сатиновые потолки</h3>
-									<span class="item-price">от 1100 Тг</span>
-									<div>
-										<span><img src="images/chech1.png" alt="img">Бесплатный cервис</span>
-										<span><img src="images/chech1.png" alt="img">С установкой</span>
-									</div>
-									<button data-toggle="modal" data-target="#zamer">Оставить заявку</button>						
-								</div>
-							</div> -->
 						</div>
 					</div>
 				</div>
 			</div>			
 		</div>
 
-
-
-		
 		<div class="reviews container">
 			<div class="row">
 				<div class="col-12">
@@ -615,23 +366,8 @@
 				</div>				
 			</div>
 		</div>
-		<!-- <div id="map">
-			<div class="container">
-				 <div class="row">
-					<div class="col-12">
-						<div class="places">
-							<img class="places-logo" src="images/logo.png" alt="logo">
-							<span>г. Москва, Красная площадь, с лева</span>
-							<div>
-						    	<img src="images/phone-icon.png" alt="img">
-						    	<a href="tel:+79215743252">+7 (921) 574 32 52</a>				
-					    	</div>
-						</div>						
-					</div>	
-				</div>
-			</div> 
-		</div>  -->
 	</main>
+
 	<footer>
 		<div class="container">
 			<div class="row">
@@ -646,12 +382,15 @@
 			</div>
 		</div>
 	</footer>
+	
 	<a class="up" href="#"><img src="images/chevron-up.png" alt="icon"></a>
-	<!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script> -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+				<!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script> -->
+	      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
-        <script src="js/wow.min.js"></script>
+				<script src="js/wow.min.js"></script>
         <script src="js/script.js"></script>
+				<script src="js/main.js"></script>
   </body>
 </html>

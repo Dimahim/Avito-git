@@ -58,6 +58,7 @@ $(function() {
           scrollTop: 0
         }, 1000);
     });
+		
     $("input.tel").click(function(){
     	$(this).val('+7');
     });
@@ -90,36 +91,38 @@ $(function() {
         }, 1000);
     });
 
-	$('.modal').on('hidden.bs.modal', function (e) {
-	  $('input:not(.type)', $(this)).val('');
-	});
-	$('form').submit(function(e){
-	    e.preventDefault();
-		var form_data = {
-			'name':$(".name", $(this)).val(),
-			'tel':$(".tel", $(this)).val(),
-			'price':$("#price", $(this)).val(),
-			'square':$("#square", $(this)).val(),
-			'type':$(".type", $(this)).val()
-		};
-		$.ajax({
-		  type: "POST",
-		  url: "mail.php",
-		  data: form_data,
-		  success: function(){
-		    $('.modal').modal('hide');
-		    setTimeout(function() {
-		    	$('.success').fadeToggle();
-		    }, 1000);
-		    setTimeout(function() {
-		    	$('.success').fadeToggle();
-		    }, 2500);
-		  },
-		  error: function() {
-		  	alert("Произошла какая то ошибка!");
-		  }
-		}); 
-	});
-	new WOW().init();
+	// $('.modal').on('hidden.bs.modal', function (e) {
+	//   $('input:not(.type)', $(this)).val('');
+	// });
+	// $('form').submit(function(e){
+	//     e.preventDefault();
+	// 	var form_data = {
+	// 		'name':$(".name", $(this)).val(),
+	// 		'tel':$(".tel", $(this)).val(),
+	// 		'price':$("#price", $(this)).val(),
+	// 		'square':$("#square", $(this)).val(),
+	// 		'type':$(".type", $(this)).val()
+	// 	};
+	// 	$.ajax({
+	// 	  type: "POST",
+	// 	  url: "mail.php",
+	// 	  data: form_data,
+	// 	  success: function(){
+	// 	    $('.modal').modal('hide');
+	// 	    setTimeout(function() {
+	// 	    	$('.success').fadeToggle();
+	// 	    }, 1000);
+	// 	    setTimeout(function() {
+	// 	    	$('.success').fadeToggle();
+	// 	    }, 2500);
+	// 	  },
+	// 	  error: function() {
+	// 	  	alert("Произошла какая то ошибка!");
+	// 	  }
+	// 	}); 
+	// });
+	// new WOW().init();
+	
 
 });
+
