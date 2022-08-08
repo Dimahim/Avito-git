@@ -528,7 +528,7 @@ main .zamer .h2-block span img {
 }
 main .zamer .form {
     width: 369px;
-    height: 300px;
+    /* height: 300px; */
     -webkit-border-radius: 5px;
     border-radius: 5px;
     background-color: #fff;
