@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>АвитоГит</title>
-		<link href="images/check.png" rel="icon" type="image/x-icon" />
+		<link href="images/item3.png" rel="icon" type="image/x-icon" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
@@ -31,8 +31,8 @@
 							<input type="hidden" name="form_subject" value="Header form">
 							<!-- END Hidden Required Fields -->
 	      			<!-- <input type="hidden" class="type" value="call" name="type"> -->
-							<input type="text" class="name" name="name" required placeholder="Ваше имя">
-							<input type="text" class="tel" name="tel" required placeholder="Ваш телефон">
+							<input type="text" class="name" name="name" maxlength="30" minlength="2" pattern="^[а-яА-Яa-zA-Z]+$" required placeholder="Ваше имя">
+							<input type="tel" class="tel" name="tel" required placeholder="+7 (999) 999-99-99">
 							<button>Заказать</button>	      			
 	      		</form>
 	      	</div>
@@ -57,8 +57,8 @@
 							<input type="hidden" name="form_subject" value="Form curs">
 							<!-- END Hidden Required Fields -->
 							<!-- <input type="hidden" class="type" value="zamer" name="type"> -->
-							<input class="name" name="name" type="text" required placeholder="Ваше имя">
-							<input class="tel" name="tel" type="text" required placeholder="Ваш телефон">
+							<input class="name" name="name" type="text" maxlength="30" minlength="2" pattern="^[а-яА-Яa-zA-Z]+$" required placeholder="Ваше имя">
+							<input class="tel" name="tel" type="tel" required placeholder="+7 (999) 999-99-99">
 		       		<button>ОСТАВИТЬ ЗАЯВКУ</button>	      			
 	      		</form>
 	      	</div>
@@ -220,9 +220,9 @@
 								<input type="hidden" name="form_subject" value="Header form">
 								<!-- END Hidden Required Fields -->
 								<!-- <input type="hidden" class="type" value="zamer2" name="type"> -->
-								<input class="name" name="name" type="text" required placeholder="Ваше имя">
-								<input class="name" name="Email" type="text" required placeholder="Email">
-								<input type="text" name="tel" placeholder="Ваш телефон" required class="tel">
+								<input class="name" name="name" type="text" required maxlength="30" minlength="2" pattern="^[а-яА-Яa-zA-Z]+$"  placeholder="Ваше имя">
+								<input class="name" name="Email" type="email" required  placeholder="Email">
+								<input type="tel" name="tel" placeholder="+7 (999) 999-99-99"  required class="tel">
 								<button>Оставить заявку</button>
 							</form>
 						</div>
@@ -397,11 +397,12 @@
 	</footer>
 	<a class="up" href="#"><img src="images/chevron-up.png" alt="icon"></a>
 	<!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script> -->
-	      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+				<script src="js/jquery.maskedinput.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 				<script src="js/wow.min.js"></script>
         <script src="js/script.js"></script>
 				<script src="js/main.js"></script>
-  </body>
+</body>
 </html>

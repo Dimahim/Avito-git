@@ -1,6 +1,8 @@
 $(function() {
 	const menuBurger = document.querySelector('.d-md-flex');
 	const linkMenuBurger = document.querySelectorAll('.link__menu');
+	const inputForm = document.querySelector('.tel');
+	
 
 	function closeMenuBurger() {
 		menuBurger.classList.toggle('show');
@@ -58,11 +60,12 @@ $(function() {
           scrollTop: 0
         }, 1000);
     });
-		
+		//маска для показа номера телефона в инпуте и плагин jquery 
     $("input.tel").click(function(){
-    	$(this).val('+7');
-    });
-	$(window).scroll(function() {
+    $(this).mask("+7 (999) 999-99-99").val('+7');
+		});
+
+		$(window).scroll(function() {
 		var pos = 86;
 		if( ($(window).width() <= 1199) || ($(window).width() >= 768) ) {
 			pos = 150;
